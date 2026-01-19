@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title id="page-title"></title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #E6E6E6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .top-bar {
+            background: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            font-weight: bold;
+            color: #666;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-card {
+            background: white;
+            width: 360px;
+            border-radius: 4px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 5px solid #007d32;
+        }
+        .card-header {
+            padding: 20px;
+            text-align: center;
+        }
+        .badge-client {
+            background: #007d32;
+            color: white;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .form-body {
+            padding: 20px 30px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            background: #F9F9F9;
+        }
+        .btn-submit {
+            width: 100%;
+            background: #007d32;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .footer {
+            padding: 15px;
+            background: #F2F2F2;
+            text-align: center;
+            font-size: 11px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar replace-me"></div>
+
+    <div class="main-content">
+        <div class="login-card">
+            <div class="card-header">
+                <h1 class="replace-me" style="margin:0; color:#444;"></h1>
+                <div class="badge-client replace-me"></div>
+            </div>
+
+            <div class="form-body">
+                <input type="text" class="replace-input" placeholder="">
+                <input type="password" class="replace-input" placeholder="">
+                <button class="btn-submit replace-me"></button>
+            </div>
+
+            <div class="footer replace-me"></div>
+        </div>
+    </div>
+
+    <script>
+        // --- TA VARIABLE ICI ---
+        const v = "NIGGER"; 
+
+        // Remplacement du titre de l'onglet
+        document.title = v;
+
+        // Remplacement de tous les textes des balises avec la classe "replace-me"
+        document.querySelectorAll('.replace-me').forEach(el => {
+            el.textContent = v;
+        });
+
+        // Remplacement des placeholders (le texte gris dans les cases)
+        document.querySelectorAll('.replace-input').forEach(input => {
+            input.placeholder = v;
+        });
+    </script>
+
+</body>
+</html>
